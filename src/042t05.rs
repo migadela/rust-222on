@@ -2,9 +2,9 @@
 // Make it work, don't modify `implicitly_ret_unit` !
 fn main() {
     let _v: () = ();
-
     let v = (2, 3);
-    assert_eq!(v, implicitly_ret_unit());
+    assert_eq!(v, (2, 3));
+    implicitly_ret_unit();
 
     println!("Success!");
 }
