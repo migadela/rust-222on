@@ -2,7 +2,7 @@
 fn main() {
     let x = Box::new(5);
     
-    let ...      // update this line, don't change other lines!
+    let mut y = Box::new(4);      // update this line, don't change other lines!
     
     *y = 4;
     
