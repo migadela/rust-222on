@@ -10,8 +10,8 @@ use std::io::{self, BufRead, Write};
  */
 
 fn birthdayCakeCandles(candles: &[i32]) -> i32 {
-    let max_height = candles.iter().cloned().max().unwrap_or(0); // Find the maximum height
-    candles.iter().filter(|&&height| height == max_height).count() as i32 // Count how many candles have the maximum height
+    let max_height = candles.iter().max().unwrap();
+    candles.iter().filter(|&&c| c == *max_height).count() as i32
 }
 
 fn main() {
